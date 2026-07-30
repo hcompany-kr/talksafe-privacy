@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TalkSafe 계정 및 데이터 삭제 · 에이치 컴퍼니</title>
+<meta name="description" content="TalkSafe 계정과 저장된 데이터를 삭제하는 방법을 안내합니다. How to delete your TalkSafe account and data.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --paper:#FBFAF7;
+    --ink:#16150F;
+    --ink-soft:#6B6459;
+    --rule:#DDD7CB;
+    --seal:#B3392B;
+    --field:#FFFFFF;
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-weight:300;
+    line-height:1.8;
+    letter-spacing:-0.01em;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{max-width:48rem;margin:0 auto;padding:0 1.5rem}
+
+  .masthead{padding:3.5rem 0 2rem;border-bottom:2px solid var(--ink)}
+
+  .masthead__eyebrow{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--seal);margin:0 0 1.2rem;
+  }
+
+  .masthead__title{
+    font-family:"Gowun Batang",serif;font-weight:700;
+    font-size:clamp(1.9rem,5vw,2.7rem);line-height:1.25;
+    letter-spacing:-0.02em;margin:0;
+  }
+
+  .masthead__title span{
+    display:block;font-family:"IBM Plex Mono",monospace;font-weight:400;
+    font-size:clamp(.8rem,2vw,.95rem);letter-spacing:.1em;
+    color:var(--ink-soft);margin-top:.8rem;
+  }
+
+  .band{padding:2.75rem 0;border-bottom:1px solid var(--rule)}
+
+  .band__label{
+    font-family:"IBM Plex Mono",monospace;font-size:.7rem;
+    letter-spacing:.18em;text-transform:uppercase;
+    color:var(--seal);margin:0 0 1.2rem;
+  }
+
+  h2{
+    font-family:"Gowun Batang",serif;font-size:1.35rem;font-weight:700;
+    margin:0 0 .8rem;letter-spacing:-0.01em;
+  }
+
+  p{margin:0 0 1rem}
+  p:last-child{margin-bottom:0}
+
+  ul{margin:0 0 1rem;padding-left:1.1rem}
+  li{margin-bottom:.4rem}
+
+  .en{color:var(--ink-soft);font-size:.92rem;line-height:1.75}
+
+  .steps{
+    list-style:none;margin:0;padding:0;
+    counter-reset:step;
+  }
+
+  .steps li{
+    counter-increment:step;
+    position:relative;
+    padding-left:2.6rem;
+    margin-bottom:1.3rem;
+  }
+
+  .steps li::before{
+    content:counter(step);
+    position:absolute;left:0;top:.1rem;
+    width:1.7rem;height:1.7rem;
+    border:1.5px solid var(--seal);border-radius:50%;
+    color:var(--seal);
+    font-family:"IBM Plex Mono",monospace;font-size:.8rem;
+    display:grid;place-content:center;
+  }
+
+  .callout{
+    background:var(--field);
+    border:1px solid var(--rule);
+    border-left:3px solid var(--seal);
+    padding:1.3rem 1.5rem;
+    margin:0 0 1rem;
+  }
+
+  .mail{
+    font-family:"IBM Plex Mono",monospace;
+    font-size:1.05rem;
+    color:var(--ink);text-decoration:none;
+    border-bottom:1.5px solid var(--seal);padding-bottom:2px;
+  }
+
+  .mail:hover,.mail:focus-visible{color:var(--seal)}
+
+  .table{border-top:1.5px solid var(--ink);margin-top:.5rem}
+
+  .table__row{
+    display:grid;grid-template-columns:13rem 1fr;gap:1rem;
+    padding:.85rem 0;border-bottom:1px solid var(--rule);
+  }
+
+  .table__key{font-size:.88rem;color:var(--ink-soft)}
+  .table__val{font-size:.97rem}
+
+  .foot{
+    padding:2rem 0 3.5rem;
+    font-family:"IBM Plex Mono",monospace;font-size:.74rem;
+    letter-spacing:.05em;color:var(--ink-soft);
+  }
+
+  .foot a{color:var(--ink-soft)}
+
+  a:focus-visible{outline:2px solid var(--seal);outline-offset:3px}
+
+  @media (max-width:640px){
+    .table__row{grid-template-columns:1fr;gap:.15rem}
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="masthead__eyebrow">TalkSafe · 에이치 컴퍼니 (H Company)</p>
+    <h1 class="masthead__title">
+      계정 및 데이터 삭제
+      <span>Account and data deletion</span>
+    </h1>
+  </div>
+</header>
+
+<main>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="band__label">개요 / Overview</p>
+      <p>TalkSafe 계정과 서버에 저장된 데이터의 삭제를 요청하실 수 있습니다. 요청하시면 계정이 해지되고 서버에 보관된 데이터가 삭제됩니다.</p>
+      <p class="en">You can request deletion of your TalkSafe account and the data stored on our servers. Once requested, your account is closed and the associated server-side data is deleted.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="band__label">삭제 요청 방법 / How to request</p>
+      <ol class="steps">
+        <li>
+          <h2>이메일로 요청</h2>
+          <p>아래 주소로 삭제 요청 메일을 보내주세요.</p>
+          <p><a class="mail" href="mailto:525lab2026@gmail.com?subject=TalkSafe%20계정%20삭제%20요청">525lab2026@gmail.com</a></p>
+        </li>
+        <li>
+          <h2>본인 확인 정보 포함</h2>
+          <p>메일 본문에 <strong>TalkSafe 로그인에 사용하신 Google 계정 이메일 주소</strong>를 적어주세요. 본인 확인을 위해 필요합니다.</p>
+          <p class="en">Please include the Google account email address you used to sign in to TalkSafe.</p>
+        </li>
+        <li>
+          <h2>처리</h2>
+          <p>요청 접수 후 <strong>영업일 기준 7일 이내</strong>에 처리하며, 처리 완료 시 회신드립니다. 늦어도 요청일로부터 <strong>30일 이내</strong>에 삭제가 완료됩니다.</p>
+        </li>
+      </ol>
+      <div class="callout">
+        <p><strong>앱에서 직접 삭제하실 수도 있습니다.</strong> 녹음 파일은 앱의 기록 화면에서 개별 삭제할 수 있으며, 클라우드에 백업된 사본도 함께 삭제됩니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="band__label">삭제되는 항목 / What is deleted</p>
+      <div class="table">
+        <div class="table__row">
+          <div class="table__key">계정 정보</div>
+          <div class="table__val">Google 로그인으로 생성된 계정 식별 정보 및 이메일 주소</div>
+        </div>
+        <div class="table__row">
+          <div class="table__key">클라우드 백업</div>
+          <div class="table__val">사용자가 직접 업로드한 녹음 파일과 그 메타데이터(제목, 녹음 시각, 길이)</div>
+        </div>
+        <div class="table__row">
+          <div class="table__key">AI 요약 · 전사</div>
+          <div class="table__val">클라우드에 함께 저장된 요약문과 전사 텍스트</div>
+        </div>
+        <div class="table__row">
+          <div class="table__key">구독 상태</div>
+          <div class="table__val">서버에 보관된 구독 플랜 정보</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="band__label">기기에 남는 데이터 / Data on your device</p>
+      <p><strong>기기에 저장된 녹음 파일과 키워드는 서버와 무관하며, 계정 삭제로 지워지지 않습니다.</strong> 이 데이터는 기기 안에만 있고 외부로 전송되지 않습니다.</p>
+      <ul>
+        <li>앱의 기록 화면에서 녹음을 개별 삭제</li>
+        <li>또는 앱을 삭제하면 기기에 저장된 데이터가 함께 제거됩니다</li>
+      </ul>
+      <p class="en">Recordings and keywords stored on your device are separate from our servers and are not removed by account deletion. Delete them individually in the app, or uninstall the app to remove all local data.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="band__label">보관 / Retention</p>
+      <p>삭제 요청 처리 후 서버에는 해당 사용자의 데이터가 남지 않습니다. 다만 <strong>결제·환불 기록</strong>은 전자상거래 등에서의 소비자보호에 관한 법률에 따라 <strong>5년간</strong> 보관됩니다. 이 기록은 결제 확인 목적으로만 사용되며 녹음 내용은 포함하지 않습니다.</p>
+      <p class="en">After deletion, no user data remains on our servers, except payment and refund records, which are retained for five years as required by Korean consumer protection law. These records do not include any recording content.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <p class="band__label">문의 / Contact</p>
+      <p><a class="mail" href="mailto:525lab2026@gmail.com">525lab2026@gmail.com</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>에이치 컴퍼니 (H Company) · 사업자등록번호 110-19-46722<br>
+    서울특별시 서대문구 포방터2길 67-22, 2층</p>
+    <!-- ⚠️ 개인정보처리방침 주소가 바뀌면 아래 href를 수정하세요 -->
+    <p><a href="https://hcompany-kr.github.io/talksafe-privacy/">TalkSafe 개인정보처리방침</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
