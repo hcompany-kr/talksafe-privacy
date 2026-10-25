@@ -20,7 +20,7 @@
 <body>
 
 <h1>🔒 TalkSafe 개인정보처리방침</h1>
-<p class="date">시행일: 2026년 6월 15일 | 최종 수정일: 2026년 10월 9일</p>
+<p class="date">시행일: 2026년 6월 15일 | 최종 수정일: 2026년 10월 25일</p>
 
 <div class="highlight">
 TalkSafe(이하 "앱")는 사용자의 개인정보를 소중히 여깁니다. 본 방침은 앱이 수집하는 정보와 이를 사용하는 방법을 설명합니다.
@@ -29,7 +29,7 @@ TalkSafe(이하 "앱")는 사용자의 개인정보를 소중히 여깁니다. �
 <h2>1. 수집하는 정보</h2>
 <table>
   <tr><th>정보 유형</th><th>수집 항목</th><th>수집 목적</th></tr>
-  <tr><td>계정 정보</td><td>이름, 이메일 주소, 프로필 사진, 계정 식별자 (Google 로그인 시)</td><td>앱 로그인 및 사용자 식별</td></tr>
+  <tr><td>계정 정보</td><td>이름, 이메일 주소, 프로필 사진, 계정 식별자 (Google 로그인 시) / 이름, 이메일 주소, 계정 식별자 (Apple 로그인 시. "이메일 가리기"를 고르면 Apple이 만든 전달용 주소만 받습니다)</td><td>앱 로그인 및 사용자 식별</td></tr>
   <tr><td>녹음 (클라우드 백업)</td><td>사용자가 클라우드 백업을 선택한 녹음 파일과 그 제목, 녹음 시각, 길이, 요약, 받아 적은 글</td><td>클라우드 백업 및 복원 (선택 기능)</td></tr>
   <tr><td>요약용 녹음</td><td>AI 요약을 요청한 녹음 (전송용으로 압축한 사본)</td><td>AI 요약 제공 (선택 기능, 요약 후 즉시 삭제)</td></tr>
   <tr><td>구독 정보</td><td>구독 플랜, 만료일, 스토어 구매 확인 정보, AI 요약 사용량</td><td>구독 확인 및 이용 한도 관리</td></tr>
@@ -50,9 +50,11 @@ TalkSafe(이하 "앱")는 사용자의 개인정보를 소중히 여깁니다. �
 <p>TalkSafe는 다음 경우를 제외하고 사용자 정보를 제3자와 공유하지 않습니다:</p>
 <ul>
   <li><strong>Google Firebase / Google Sign-In:</strong> 인증 서비스 제공 (Google LLC)</li>
+  <li><strong>Apple 로그인(Sign in with Apple):</strong> iPhone 앱의 인증 서비스 제공 (Apple Inc.)</li>
   <li><strong>Supabase:</strong> 구독 정보, AI 요약 사용량, 클라우드 백업 녹음 저장 (Supabase Inc.)</li>
   <li><strong>Google Gemini API:</strong> AI 요약을 요청한 녹음의 요약 처리. 요약 후 즉시 삭제되며 AI 학습에 사용되지 않습니다 (Google LLC)</li>
-  <li><strong>Google Play:</strong> 구독 결제 처리 및 구매 확인 (Google LLC)</li>
+  <li><strong>Google Play:</strong> Android 앱의 구독 결제 처리 및 구매 확인 (Google LLC)</li>
+  <li><strong>Apple App Store:</strong> iPhone 앱의 구독 결제 처리 및 구매 확인 (Apple Inc.)</li>
   <li><strong>Google AdMob:</strong> 무료 플랜 광고 제공 (Google LLC)</li>
   <li><strong>법적 요구:</strong> 법령에 따라 요구되는 경우</li>
 </ul>
@@ -70,7 +72,7 @@ TalkSafe(이하 "앱")는 사용자의 개인정보를 소중히 여깁니다. �
 <ul>
   <li><strong>데이터 삭제:</strong> 앱의 기록 화면에서 녹음을 하나씩 삭제할 수 있으며, 클라우드에 백업된 사본도 함께 삭제됩니다. 계정을 삭제하지 않아도 됩니다.</li>
   <li><strong>계정 삭제:</strong> 앱의 <strong>설정 → 계정 삭제</strong>에서 직접 삭제할 수 있습니다. 앱을 쓸 수 없는 경우 이메일(525lab2026@gmail.com)로 요청하실 수 있습니다. 자세한 내용은 <a href="#delete">아래 10항</a>과 <a href="delete-account.html">계정 및 데이터 삭제 안내</a>를 참고하세요.</li>
-  <li><strong>광고 맞춤화 거부:</strong> 기기 설정에서 광고 ID를 재설정하거나 맞춤형 광고를 거부할 수 있습니다.</li>
+  <li><strong>광고 맞춤화 거부:</strong> Android에서는 <strong>설정 → Google → 광고</strong>에서 광고 ID를 재설정하거나 삭제할 수 있습니다. iPhone에서는 앱을 처음 열 때 나오는 창에서 <strong>"앱에 추적 금지 요청"</strong>을 고르거나, 나중에 <strong>설정 → 개인정보 보호 및 보안 → 추적</strong>에서 TalkSafe를 끌 수 있습니다. 추적을 허용하지 않아도 앱의 모든 기능은 그대로 쓸 수 있으며, 무료 플랜 광고는 맞춤형이 아닌 광고로 표시됩니다.</li>
   <li><strong>문의:</strong> 개인정보 관련 문의는 아래 연락처로 연락하세요.</li>
 </ul>
 
@@ -105,13 +107,13 @@ TalkSafe는 핵심 기능인 <strong>키워드 감지 및 자동 녹음</strong>
   <tr><td>삭제되는 데이터</td><td>로그인 계정, 클라우드 백업 녹음과 그 정보(제목, 녹음 시각, 길이, 요약, 받아 적은 글), 구독 정보, AI 요약 사용량</td></tr>
   <tr><td>보관되는 데이터</td><td>가입 혜택의 중복 지급을 막기 위해, 혜택을 받은 계정에 한해 원래 값으로 되돌릴 수 없게 변환한 식별값(해시)만 보관합니다. 이 값으로는 이름이나 이메일을 알 수 없습니다.</td></tr>
   <tr><td>기기에 남는 데이터</td><td>기기에 저장된 녹음과 키워드는 계정 삭제로 지워지지 않습니다. 앱의 기록 화면에서 지우거나 앱을 삭제하면 함께 지워집니다.</td></tr>
-  <tr><td>스토어 구독</td><td>계정을 삭제해도 Google Play 구독은 자동으로 해지되지 않습니다. Google Play의 구독 메뉴에서 직접 해지해 주세요.</td></tr>
+  <tr><td>스토어 구독</td><td>계정을 삭제해도 스토어 구독은 자동으로 해지되지 않습니다. Android는 Google Play의 구독 메뉴, iPhone은 <strong>설정 → 사용자 이름 → 구독</strong>에서 직접 해지해 주세요. iPhone에서 Apple로 로그인한 계정을 삭제하면 TalkSafe와 Apple ID의 로그인 연결도 함께 해제됩니다.</td></tr>
 </table>
 <p><strong>계정은 유지하고 데이터만 삭제:</strong> 앱의 기록 화면에서 녹음을 삭제하면 클라우드에 백업된 사본도 함께 삭제됩니다.</p>
 
 <footer>
   <p>© 2026 525labs. All rights reserved.<br>
-  본 방침은 한국 개인정보 보호법 및 Google Play 정책을 준수합니다.</p>
+  본 방침은 한국 개인정보 보호법, Google Play 및 App Store 정책을 준수합니다.</p>
 </footer>
 
 </body>
